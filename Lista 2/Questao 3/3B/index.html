@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03 - B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Círculo Rolando em Plano Inclinado (3D)</h1>
+        <h1>Círculo Rolando em 3D</h1>
+        <div id="canvas-container"></div>
+        <div class="controls">
+            <button id="resetBtn">Reiniciar Animação</button>
+            <button id="pauseBtn">Pausar</button>
+        </div>
+        <div class="info">
+            <p>Círculo maior: <span>Raio 100</span> (inclinado 60° no eixo X)</p>
+            <p>Círculo menor: <span>Raio 25</span> (perpendicular ao plano maior)</p>
+            <p>Ângulo: <span id="anguloAtual">0°</span></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

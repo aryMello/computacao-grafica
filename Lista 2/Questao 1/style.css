@@ -1,3 +1,10 @@
+h1 {
+    color: #ecf0f1; /* branco suave */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
 body {
     margin: 0;
     padding: 20px;
@@ -10,7 +17,9 @@ body {
 }
 
 canvas {
-    background: #1a1a2e;
+    background: #ecf0f1;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    display: block;
+    margin-bottom: 20px;
 }
