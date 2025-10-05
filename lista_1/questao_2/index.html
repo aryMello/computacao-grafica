@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de Transformações Afins 3D</h1>
+        <p class="subtitle">Rotações, Escalas, Translações e Reflexões em Coordenadas Homogêneas</p>
+
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="btnSimA">A) Arco Circular (A→B)</button>
+            <button id="btnSimB">B) Rot + Escala + Trans</button>
+            <button id="btnSimC">C) Reflexão + Rotação</button>
+            <button id="btnReset">Resetar Vista</button>
+        </div>
+
+        <div class="speed-control">
+            <label class="info-label">Velocidade:</label>
+            <input type="range" id="speedSlider" min="10" max="100" value="50">
+            <span class="info-value" id="speedValue">50</span>
+        </div>
+
+        <div class="info-panel">
+            <div class="section-title">Informações da Simulação</div>
+            <div class="info-row">
+                <span class="info-label">Status:</span>
+                <span class="info-value" id="status">Pronto - Arraste para rotacionar</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Passo:</span>
+                <span class="info-value" id="step">-</span>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #4ecdc4;"></div>
+                    <span>Figura Original</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #f38181;"></div>
+                    <span>Figura Transformada</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #ff0000;"></div>
+                    <span>Eixo X</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #00ff00;"></div>
+                    <span>Eixo Y</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #0000ff;"></div>
+                    <span>Eixo Z</span>
+                </div>
+            </div>
+
+            <div class="section-title">Matrizes de Transformação (4×4)</div>
+            <div class="matrix-display" id="matrixDisplay">
+                Clique em uma simulação para ver as matrizes em coordenadas homogêneas
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
