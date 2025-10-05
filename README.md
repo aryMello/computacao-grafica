@@ -94,7 +94,7 @@ Animação 3D com círculo rolando no perímetro de outro círculo inclinado.
 - **HTML5 Canvas**: Para animações 2D
 - **JavaScript**: Lógica de animação e física
 - **CSS3**: Estilização e layout
-- **Three.js (r128)**: Para animação 3D (apenas animação 5)
+- **Three.js**: Para animação 3D
 
 ## Licença
 
