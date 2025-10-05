@@ -37,7 +37,7 @@ Simulação do movimento de um braço mecânico em 2D com duas articulações.
 
 **Demo:**
 
-![Questao 2A](./assets/questao02a.gif)
+![Questao 2A](./assets/questao2a.gif)
 
 ---
 
@@ -54,7 +54,7 @@ Animação 2D da vista superior (plano XY) de uma partícula se movendo em espir
 
 **Demo:**
 
-![Questao 2B](./assets/questao02b.gif)
+![Questao 2B](./assets/questao2b.gif)
 
 ---
 
@@ -72,7 +72,7 @@ Vista superior do plano XY mostrando um círculo pequeno rolando dentro de um c�
 
 **Demo:**
 
-![Questao 3A](./assets/questao03a.gif)
+![Questao 3A](./assets/questao3a.gif)
 
 ---
 
