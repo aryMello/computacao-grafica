@@ -15,9 +15,6 @@ let vy = -10; // Velocidade vertical inicial (negativa = pra cima)
 const gravidade = 0.5;
 
 // Calcular velocidade horizontal para período de 4 segundos
-// 4 segundos = 240 frames (assumindo 60 fps)
-// A bola precisa ir e voltar na horizontal em 4 segundos
-// Distância = largura do canvas - 2 * raio
 const distanciaHorizontal = canvas.width - 2 * raio;
 const tempoTotal = 240; // frames (4 segundos a 60fps)
 vx = (distanciaHorizontal * 2) / tempoTotal; // multiplicado por 2 para ida e volta

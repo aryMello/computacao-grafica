@@ -168,7 +168,6 @@ function atualizar() {
     circuloMenor.position.set(x, y, z);
     
     // Orientar o círculo menor perpendicular ao plano inclinado
-    // O círculo menor deve estar perpendicular à tangente do círculo maior
     circuloMenor.rotation.y = anguloOrbital + Math.PI / 2;
     circuloMenor.rotation.x = inclinacaoRad;
     

@@ -18,7 +18,6 @@ const origemX = canvas.width / 2;
 const origemY = canvas.height / 2;
 
 // Ângulos (em radianos)
-// Começando na vertical (270 graus ou -90 graus ou 3π/2)
 let anguloBraco = -Math.PI / 2; // -90 graus (vertical para cima)
 let anguloAntebraco = 0; // Relativo ao braço
 

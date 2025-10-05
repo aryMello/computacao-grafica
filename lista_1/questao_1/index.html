@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operadores Afins em R³</h1>
+        <p class="subtitle">Visualização de Transformações Geométricas</p>
+
+        <div class="status" id="status">
+            Selecione uma transformação
+        </div>
+
+        <canvas id="canvas" width="700" height="500"></canvas>
+
+        <div class="controls">
+            <button class="btn-transform1" onclick="startTransform(1)">
+                Rotação (x=2, y=1)
+            </button>
+            <button class="btn-transform2" onclick="startTransform(2)">
+                Reflexão no Plano C
+            </button>
+            <button class="btn-transform3" onclick="startTransform(3)">
+                Rotação Helicoidal
+            </button>
+            <button class="btn-reset" onclick="reset()">
+                Reset
+            </button>
+        </div>
+
+        <div class="info">
+            <h3 id="transformTitle">Informações da Transformação</h3>
+            <p id="transformDesc">Clique em uma transformação para ver os detalhes.</p>
+            
+            <div class="coords">
+                <div class="coord-box">
+                    <div class="coord-label">Ponto Inicial:</div>
+                    <div id="pointStart">(0.5, 0.5, 0.5)</div>
+                </div>
+                <div class="coord-box">
+                    <div class="coord-label">Ponto Final:</div>
+                    <div id="pointEnd">(0.5, 0.5, 0.5)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

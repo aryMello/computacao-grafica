@@ -96,7 +96,6 @@ function desenharCirculoInterno() {
     ctx.fill();
     
     // Calcular posição do ponto marcado (demonstra o rolamento)
-    // O ponto começa na parte "direita" do círculo interno (posição inicial)
     const pontoX = centroInternoX + raioInterno * escala * Math.cos(anguloRotacao);
     const pontoY = centroInternoY + raioInterno * escala * Math.sin(anguloRotacao);
     
@@ -138,14 +137,9 @@ function animar(timestamp) {
     const progresso = (tempoDecorrido % duracaoVolta) / duracaoVolta;
     
     // Atualizar ângulo orbital (movimento anti-horário)
-    // Anti-horário = ângulo aumenta no sentido matemático padrão
     anguloOrbital = progresso * 2 * Math.PI;
     
     // Calcular ângulo de rotação do círculo
-    // Quando o círculo rola sem deslizar:
-    // Distância percorrida = raioOrbita * anguloOrbital
-    // Ângulo de rotação = distância / raioInterno
-    // Como o círculo rola na PAREDE INTERNA, ele gira no sentido OPOSTO ao movimento orbital
     const circunferenciaOrbita = 2 * Math.PI * raioOrbita;
     const distanciaPercorrida = progresso * circunferenciaOrbita;
     anguloRotacao = -(distanciaPercorrida / raioInterno); // Negativo porque gira ao contrário
