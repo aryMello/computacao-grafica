@@ -19,7 +19,8 @@ Animação 2D de uma bola com raio 30 que se movimenta pela tela colidindo elast
 - Colisões elásticas (sem perda de energia)
 
 **Demo:**
-!(Questao 1)[./assets/questao01.mp4]
+
+![Questao 1](./assets/questao01.mp4)
 
 ---
 
@@ -36,7 +37,7 @@ Simulação do movimento de um braço mecânico em 2D com duas articulações.
 
 **Demo:**
 
-!(Questao 2A)[./assets/questao02a.mp4]
+![Questao 2A](./assets/questao02a.mp4)
 
 ---
 
@@ -53,7 +54,7 @@ Animação 2D da vista superior (plano XY) de uma partícula se movendo em espir
 
 **Demo:**
 
-!(Questao 2B)[./assets/questao02b.mp4]
+![Questao 2B](./assets/questao02b.mp4)
 
 ---
 
@@ -71,7 +72,7 @@ Vista superior do plano XY mostrando um círculo pequeno rolando dentro de um c�
 
 **Demo:**
 
-!(Questao 3A)[./assets/questao03a.mp4]
+![Questao 3A](./assets/questao03a.mp4)
 
 ---
 
