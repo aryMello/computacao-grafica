@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="container">
+        <h1>Isneique - A Serpente 4D</h1>
+        <p class="subtitle">Movimento helicoidal com reflexões nos planos A e B</p>
+        
+        <div class="status" id="status">
+            Voltas: 0.0 | Reflexões: 0 | Clique em Iniciar
+        </div>
+        
+        <canvas id="canvas" width="700" height="500"></canvas>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #e74c3c;"></div>
+                <span>Serpente</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3498db;"></div>
+                <span>Plano A</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #2ecc71;"></div>
+                <span>Plano B</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #9b59b6;"></div>
+                <span>Eixo D</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-play" onclick="startAnimation()" id="btnPlay">
+                Iniciar
+            </button>
+            <button class="btn-pause" onclick="pauseAnimation()" id="btnPause" disabled>
+                Pausar
+            </button>
+            <button class="btn-reset" onclick="resetAnimation()">
+                Reset
+            </button>
+            <button class="btn-matrix" onclick="toggleMatrix()">
+                Mostrar Matrizes
+            </button>
+        </div>
+        
+        <div class="info">
+            <h3>a) Informações do Problema</h3>
+            <p><strong>Plano A:</strong> -2x + y - z = 1</p>
+            <p><strong>Plano B:</strong> y + z = 1</p>
+            <p><strong>Plano C (reflexão):</strong> Ponto (0,1,0) + vetores direcionais</p>
+            <p><strong>Eixo D:</strong> (-t, 1-t, t) - direção (-1, -1, 1)</p>
+            <p><strong>Movimento:</strong> Espiral helicoidal (translação = 2 por volta) + reflexões em A e B</p>
+            
+            <h3 style="margin-top: 15px;">b) Adaptação para Planos Rotativos</h3>
+            <p>Se os planos A e B rotacionarem em torno de D com velocidade ω:</p>
+            <p>• <strong>Plano A:</strong> Aplica rotação horária (sentido H) com ângulo ωt</p>
+            <p>• <strong>Plano B:</strong> Aplica rotação anti-horária (sentido AH) com ângulo -ωt</p>
+            <p>• As normais dos planos precisam ser atualizadas a cada frame</p>
+            <p>• Verificação de cruzamento deve usar planos transformados por T_rot(ωt)</p>
+        </div>
+        
+        <div class="matrix-display" id="matrixDisplay">
+            <h4>Matrizes dos Operadores (4x4 em coordenadas homogêneas)</h4>
+            <pre id="matrixContent">Clique em Iniciar para ver as matrizes...</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

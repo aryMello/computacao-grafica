@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação do Pião com Operadores Afins</h1>
+        <p class="subtitle">Rotação dupla: 4 voltas em r + 1 volta em s</p>
+        
+        <div class="status" id="status">
+            Tempo: 0.00s / 8.00s | Clique em Iniciar
+        </div>
+        
+        <canvas id="canvas" width="700" height="500"></canvas>
+        
+        <div class="controls">
+            <button class="btn-play" onclick="startAnimation()" id="btnPlay">
+                Iniciar
+            </button>
+            <button class="btn-pause" onclick="pauseAnimation()" id="btnPause" disabled>
+                Pausar
+            </button>
+            <button class="btn-reset" onclick="resetAnimation()">
+                Reset
+            </button>
+            <button class="btn-matrix" onclick="toggleMatrix()">
+                Mostrar Matrizes
+            </button>
+        </div>
+        
+        <div class="info">
+            <h3>Informações do Problema</h3>
+            <p><strong>Eixo r:</strong> x = 1+q, y = 2-q, z = 0 (direção: 1,-1,0)</p>
+            <p><strong>Eixo s:</strong> x = 2, y = 1, z variável (direção: 0,0,1)</p>
+            <p><strong>Rotações:</strong> Pião gira 4 voltas em r, enquanto r gira 1 volta em s</p>
+            
+            <div class="coords">
+                <div class="coord-box">
+                    <div class="coord-label">Bico do Pião:</div>
+                    <div id="pointBico">(1.00, 2.00, 0.00)</div>
+                </div>
+                <div class="coord-box">
+                    <div class="coord-label">Ponto Marcador:</div>
+                    <div id="pointMarker">(1.30, 2.00, 0.50)</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="matrix-display" id="matrixDisplay">
+            <h4>Matrizes dos Operadores Afins (tempo atual)</h4>
+            <pre id="matrixContent">Clique em Iniciar para ver as matrizes</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

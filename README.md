@@ -6,7 +6,89 @@ Projeto de animações 2D e 3D desenvolvido com HTML Canvas e Three.js, contendo
 
 Este repositório contém 5 animações interativas que demonstram conceitos de física, movimento e geometria computacional. Todas as animações são implementadas de forma simples e didática, ideal para aprendizado.
 
-## Cenários Implementados
+## Lista 1 - Modelagem Geométrica
+
+### 1. Operadores Afins Notórios
+Implementação e visualização de três operadores afins fundamentais no R³.
+
+**Características:**
+- **Rotação** em torno da reta s = {(x, y, z) ∈ R³ | x = 2 e y = 1}
+- **Reflexão** em relação ao plano C = {(x, y, z) | (0, 1, 0) + q(-2, 4, -2) + p(-1, -1, 1)}
+- **Rotação helicoidal** em torno de D = (-t, 1-t, t) com fator de translação 2/π
+- Animação de figura geométrica (quadrado de lado 1) executando as três operações
+- Transições suaves entre transformações
+- Matrizes em coordenadas homogêneas
+
+**Demo:**
+![Lista 1 - Questão 1](./assets/lista1_questao1.gif)
+
+---
+
+### 2. Simulação de Movimento com Rotações Afins
+Simulação do movimento de uma partícula através de rotações afins em arco circular.
+
+**Características:**
+- Trajetória de A = (2, -2, -3) até B = (2, 1, 0)
+- Arco circular centrado em C = (0, -1, -1)
+- Movimento em incrementos de 30 graus
+- Matrizes de transformação afim em coordenadas homogêneas
+- Visualização da partícula percorrendo o arco
+
+**Demo:**
+![Lista 1 - Questão 2](./assets/lista1_questao2.gif)
+
+---
+
+### 3. Composição de Transformações
+Operador afim composto por rotação, escala e translação.
+
+**Características:**
+- **Rotação** de 30° em torno da reta dirigida por (1, -1, 1) passando por (-1, 1, 0)
+- **Escala** com fatores 3, -2 e 0,5 para x, y e z
+- **Translação** (1, -2, -3)
+- Reflexão no plano x - y = 1
+- Rotação anti-horária de 30° em torno da reta (t, 0, -t)
+- Animação fluida de figura geométrica executando todas as operações
+- Produto de matrizes em coordenadas homogêneas
+
+**Demo:**
+![Lista 1 - Questão 3](./assets/lista1_questao3.gif)
+
+---
+
+### 4. Animação do Pião com Dupla Rotação
+Simulação de um pião com rotação composta em dois eixos diferentes.
+
+**Características:**
+- Pião com bico inicial em (1, 2, 0)
+- **Rotação interna**: 4 voltas em torno do eixo r = {(x, y, z) | x = 1+q, 2-q, 0} a cada t segundos
+- **Rotação externa**: eixo r gira em torno de s = {(x, y, z) | x = 2 e y = 1} dando 1 volta a cada t segundos
+- Ponto marcado na frente do pião para visualizar a rotação
+- Operadores afins parametrizados em função do tempo
+- Visualização 3D completa
+
+**Demo:**
+![Lista 1 - Questão 4](./assets/lista1_questao4.gif)
+
+---
+
+### 5. Isneique - Entidade 4D (Serpente Dimensional)
+Animação de uma entidade 4D atravessando o R³ com movimento espiral e reflexões.
+
+**Características:**
+- Fenda espacial delimitada pelos planos A = -2x + y - z = 1 e B = y + z = 1
+- Movimento espiral em torno do eixo D = (-t, 1-t, t)
+- Fator de translação: 2 unidades por volta
+- Reflexão no plano C ao cruzar os planos A ou B
+- Matrizes em coordenadas homogêneas na ordem correta
+- Visualização do movimento da "serpente"
+- **Bônus**: Análise de adaptações para planos A e B rotacionando em torno de D
+
+**Demo:**
+![Lista 1 - Questão 5](./assets/lista1-questao5.gif)
+
+
+## Lista 2 - Animações de Física e Movimento
 
 ### 1. Bola Quicando com Colisão Elástica
 Animação 2D de uma bola com raio 30 que se movimenta pela tela colidindo elasticamente com chão e paredes.
